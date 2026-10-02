@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK-Game-Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🎮 AK-Game-Store</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#games">Games</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <input type="search" id="search" placeholder="Search games...">
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <span class="tag">Featured Game</span>
+        <h1>EndlessMove</h1>
+        <p>Fly through endless levels of excitement!</p>
+        <p>🤖 Android APK | ⬇ <span id="hero-count">0</span> Downloads</p>
+        <a class="download" href="games/app-debug.apk"
+           download onclick="downloadGame('EndlessMove')">
+           ⬇ Download Now
+        </a>
+    </div>
+    <div class="hero-image"></div>
+</section>
+
+<main id="games">
+    <h2>🎮 All Games</h2>
+    <div class="filters">
+        <button onclick="filterGames('All')">All</button>
+        <button onclick="filterGames('Action')">Action</button>
+        <button onclick="filterGames('Racing')">Racing</button>
+        <button onclick="filterGames('Adventure')">Adventure</button>
+        <button onclick="filterGames('Arcade')">Arcade</button>
+    </div>
+    <div class="game-list" id="game-list"></div>
+</main>
+
+<section id="about" class="footer-info">
+    <h2>About AK-Game-Store</h2>
+    <p>Abhishek Indie Game Developer</p>
+    <p>Download your favorite Android games in one place.</p>
+</section>
+
+<footer id="contact">
+    <p>AK-Game-Store | Play More · Download More</p>
+    <p>Contact: abhishekanim321@gmail.com</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

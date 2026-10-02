@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #061326;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 4%;
+    gap: 20px;
+    background: #071020;
+    border-bottom: 1px solid #18304c;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #00b7ff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00b7ff;
+}
+
+#search {
+    padding: 12px 16px;
+    border-radius: 25px;
+    border: 1px solid #263c59;
+    background: #14243d;
+    color: white;
+    outline: none;
+}
+
+.hero {
+    margin: 25px 2%;
+    padding: 45px;
+    min-height: 300px;
+    border: 1px solid #16406b;
+    border-radius: 20px;
+    background: linear-gradient(110deg, #071b3d, #103e73, #061326);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.tag {
+    background: #087c31;
+    padding: 8px 14px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.hero p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #d0e0f5;
+}
+
+.hero-image {
+    font-size: 130px;
+}
+
+.download {
+    display: inline-block;
+    background: #0785f9;
+    color: white;
+    padding: 15px 25px;
+    margin-top: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download:hover {
+    background: #0065c5;
+}
+
+main {
+    padding: 20px 3%;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.filters button {
+    background: #14243d;
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: #0785f9;
+}
+
+
+
+.footer-info, footer {
+    padding: 30px 5%;
+    margin-top: 25px;
+    background: #09172a;
+    border-top: 1px solid #193553;
+}
+
+.footer-info p, footer p {
+    margin-top: 12px;
+    color: #adc5e4;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-image {
+        font-size: 90px;
+    }
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+.game-card {
+    width: 100%;
+    min-width: 0;
+    background: #0a1b32;
+    border: 1px solid #193553;
+    border-radius: 15px;
+    padding: 12px;
+    overflow: hidden;
+}
+
+.game-art {
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.game-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+@media (max-width: 800px) {
+    .game-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    .game-list {
+        grid-template-columns: 1fr;
+    }
+}
